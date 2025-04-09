@@ -72,7 +72,8 @@ More details can be found at [Running Your Own Universal Editor Service](https:/
 Now you should see all requests going to AEM having the `login-token` cookie set.
 
 ### AEM 6.5 Special Case
-When running AEM 6.5, upgrade to SP21 or higher.
-With SP21 & SP22, download the Universal Editor Feature Pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+When running AEM 6.5, upgrade to SP21 or higher.  
+With SP21 & SP22, download the Universal Editor Feature Pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).  
+For SP23 and higher, no additional Feature Pack is required.  
 This provides the capability to open directly the Universal Editor out of the AEM Site Admin, by configuring the Universal Editor URL Service in OSGi.
 See [Universal Editor for AEM 6.5 Documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction#configure-services) for more details on the configuration.
