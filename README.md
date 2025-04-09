@@ -36,11 +36,13 @@ And then
 ### Universal Editor Service
 1. Download the latest Universal Editor Service from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 2. Unzip the downloaded file
-3. Create a .env file or set following environment variables
-    * `UES_TLS_REJECT_UNAUTHORIZED=false`
-    * `UES_CORS_PRIVATE_NETWORK=true`
-    * `UES_DISABLE_IMS_VALIDATION=true`
-4. Run `node universal-editor-service.cjs`
+3. Create a .env file or set following environment variables and run the service
+```shell
+export UES_TLS_REJECT_UNAUTHORIZED=false
+export UES_CORS_PRIVATE_NETWORK=true
+export UES_DISABLE_IMS_VALIDATION=true
+node universal-editor-service.cjs
+```
 
 More details can be found at [Running Your Own Universal Editor Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev)
 
@@ -68,3 +70,9 @@ More details can be found at [Running Your Own Universal Editor Service](https:/
 5. Refresh the Page
 
 Now you should see all requests going to AEM having the `login-token` cookie set.
+
+### AEM 6.5 Special Case
+When running AEM 6.5, upgrade to SP21 or higher.
+With SP21 & SP22, download the Universal Editor Feature Pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+This provides the capability to open directly the Universal Editor out of the AEM Site Admin, by configuring the Universal Editor URL Service in OSGi.
+See [Universal Editor for AEM 6.5 Documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction#configure-services) for more details on the configuration.
