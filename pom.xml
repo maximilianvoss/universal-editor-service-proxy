@@ -17,7 +17,7 @@
   <groupId>com.adobe.aem.sites</groupId>
   <artifactId>universal-editor-service-proxy</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>Universal Editor Service Proxy Servlet</name>
   <description>Universal Editor Service Proxy Servlet</description>
   <modules>
