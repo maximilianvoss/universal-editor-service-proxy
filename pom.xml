@@ -17,7 +17,7 @@
   <groupId>com.adobe.aem.sites</groupId>
   <artifactId>universal-editor-service-proxy</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Universal Editor Service Proxy Servlet</name>
   <description>Universal Editor Service Proxy Servlet</description>
   <modules>
@@ -39,6 +39,14 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <componentGroupName>Universal Editor Service Proxy Servlet</componentGroupName>
   </properties>
+
+  <scm>
+    <connection>scm:git:maximilianvoss@github.com/maximilianvoss/universal-editor-service-proxy.git</connection>
+    <developerConnection>scm:git:maximilianvoss@github.com/maximilianvoss/universal-editor-service-proxy.git</developerConnection>
+    <url>https://github.com/maximilianvoss/universal-editor-service-proxy/tree/main/</url>
+    <tag>universal-editor-service-proxy-1.0.0</tag>
+  </scm>
+
   <build>
     <plugins>
       <!-- Maven Release Plugin -->
@@ -155,9 +163,6 @@
               <configuration>
                 <bnd>
 Bundle-Category: ${componentGroupName}
-
-# export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
--exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
 
 # reproducible builds (https://github.com/bndtools/bnd/issues/3521)
 -noextraheaders: true
@@ -332,7 +337,7 @@ Bundle-DocURL:
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -352,7 +357,7 @@ Bundle-DocURL:
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -373,7 +378,7 @@ Bundle-DocURL:
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
