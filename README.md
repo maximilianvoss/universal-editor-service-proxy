@@ -14,7 +14,15 @@ mvn clean install
 ```
 
 ## Install
-Install the `target/universal-editor-service-proxy.core-*.jar` file directly into the Felix console http://localhost:4502/system/console/bundles.
+* Build the bundle yourself
+
+or
+
+* Download the latest released bundle from https://github.com/maximilianvoss/universal-editor-service-proxy/releases/latest
+
+And then
+
+* Install the `core/target/universal-editor-service-proxy.core-*.jar` file directly into the Felix console http://localhost:4502/system/console/bundles. 
 
 ## Setting up the whole development environment
 
