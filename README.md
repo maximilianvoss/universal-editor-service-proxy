@@ -53,7 +53,7 @@ More details can be found at [Running Your Own Universal Editor Service](https:/
 1. Do your normal required instrumentation on the page.
 2. Change the protocol to use `aem65` instead of `aem` as it will then also use the local AEM pickers
     * Change this `<meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:8443">` to `<meta name="urn:adobe:aue:system:aemconnection" content="aem65:https://localhost:8443">`
-3. Add a new service endpoint
+3. Add a new service endpoint (**must be removed or adapted before pushing to production or any AEM Cloud instance)
    * By adding following meta tag: `<meta name="urn:adobe:aue:config:service" content="https://localhost:8443/universal-editor">`
 
 ### Extensions
