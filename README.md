@@ -5,8 +5,8 @@ It proxies requests from the local AEM instance to a local running Universal Edi
 By this, users won't need to provide Authentication tokens or similar as requests will be fed by AEM's `login-token` cookie.
 This works with AEMCS as well as AEM 6.5 local development instances.
 
-**!!!DO ONLY USE THIS ON YOUR LOCAL AEM SDK OR AEM 6.5 INSTANCE!!!**  
-**!!!DON'T PUT THIS INTO ANY PRODUCTION SETUP!!!**
+**!!!ONLY USE THIS ON YOUR LOCAL AEM SDK OR AEM 6.5 INSTANCE!!!**  
+**!!!DON'T PUT THIS INTO ANY PRODUCTION, STAGE, UAT OR AEM CLOUD SERVICE SETUP!!!**
 
 ## Building this Package
 ```shell
