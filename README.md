@@ -2,9 +2,10 @@
 
 This bundle provides a proxy to the Universal Editor Service (UES) to speed up the local development setup.
 It proxies requests from the local AEM instance to a local running Universal Editor Service. 
-By this, users won't need to provide Authentication tokens or similar as requests will be fed by AEM's `login-token` cookie.  
+By this, users won't need to provide Authentication tokens or similar as requests will be fed by AEM's `login-token` cookie.
+This works with AEMCS as well as AEM 6.5 local development instances.
 
-**!!!DO ONLY USE THIS ON YOUR LOCAL AEM SDK OR AEM 6.5 INSTANCE!!!***
+**!!!DO ONLY USE THIS ON YOUR LOCAL AEM SDK OR AEM 6.5 INSTANCE!!!**  
 **!!!DON'T PUT THIS INTO ANY PRODUCTION SETUP!!!**
 
 ## Building this Package
