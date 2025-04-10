@@ -8,6 +8,10 @@ This works with AEMCS as well as AEM 6.5 local development instances.
 **!!!ONLY USE THIS ON YOUR LOCAL AEM SDK OR AEM 6.5 INSTANCE!!!**  
 **!!!DON'T PUT THIS INTO ANY PRODUCTION, STAGE, UAT OR AEM CLOUD SERVICE SETUP!!!**
 
+## Prerequisites
+* AEMCS >= 2025.2.x
+* AEM 6.5 SP21/SP22 with Universal Editor Feature Pack installed or SP23 or higher
+
 ## Building this Package
 ```shell
 mvn clean install
