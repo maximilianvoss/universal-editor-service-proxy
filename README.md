@@ -32,10 +32,10 @@ And then
 
 ### AEM SDK
 1. Ensure your AEM SDK is running on HTTPS. Either via AEM SSL configuration or a local https proxy.
-2. Basic OSGi setup 
-    * Remove `X-FRAME-Options=SAMEORIGIN` header from the OSGi config for org.apache.sling.engine.impl.SlingMainServlet 
+2. Basic OSGi setup
     * Set `token.samesite.cookie.attr`=`Partitioned` for the OSGi config for com.day.crx.security.token.impl.impl.TokenAuthenticationHandler
     * See: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview#samesite-cookies for more details.
+    * Remove `X-FRAME-Options=SAMEORIGIN` header from the OSGi config for org.apache.sling.engine.impl.SlingMainServlet in case a AEM rendered page is used
 
 ### Universal Editor Service
 1. Download the latest Universal Editor Service from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
@@ -62,15 +62,11 @@ More details can be found at [Running Your Own Universal Editor Service](https:/
 3. Add a new service endpoint (**must be removed or adapted before pushing to production or any AEM Cloud instance)
    * By adding following meta tag: `<meta name="urn:adobe:aue:config:service" content="https://localhost:8443/universal-editor">`
 
-### Extensions
-1. Go the [Extension Manager](https://experience.adobe.com/#/aem/extension-manager/universal-editor)
-2. Search and enable the Extension: `AEM Universal Editor Dev Login Extension`
-
 ## Run it
 1. Open the Universal Editor
 2. Paste your AEM URL or your external rendered URL into the Universal Editor
-3. Click on `Developer Login` in the header menu
-4. Put your AEM credentials into the login form 
+3. Click on `Local Developer Login` in the header menu
+4. Put your AEM credentials into the login form and submit
 5. Refresh the Page
 
 Now you should see all requests going to AEM having the `login-token` cookie set.
